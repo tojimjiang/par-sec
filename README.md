@@ -2,14 +2,14 @@
 ## What is this?
 This is a python program that parses SEC's EDGAR system for 13F SEC documents, and creates a `.tsv` file for the parsed results. Par-sec aims to get the most recent 13F-HR available for the given CIK. By default, it provides just the companies, value and percentage of the holdings listed in a 13F-HR.
 
-Optionally, Par-sec can instead get any 13F or 13F-HR filing, and parse all the data in the XML file and include such data in the `.tsv.` file. See [Config Values (and Useable as Arguments)](#config) to enable.
+Optionally, Par-sec can instead get any 13F or 13F-HR filing, and parse all the data in the XML file and include such data in the `.tsv` file. See [Config Values (and Useable as Arguments)](#config) to enable.
 
 ### TL;DR of Implementation
 Takes a CIK to craft a URL to access EDGAR, and scrap the page for the desired document filing link. Access the document filing, and scrap the page for the XML link for reports. Access the XML to get the data that is used to generate `.tsv` file.
 
 ## Depends On
-_Should be a part of __any__ python build:_ os, re, sys, and configparser   
-_External Libraries:_ requests, beautifulsoup, lxml
+_Should be a part of __any__ python build:_ `os`, `re`, `sys`, and `configparser`    
+_External Libraries:_ `requests`, `beautifulsoup`, `lxml`
 ## How to Run This 
 ### Native Using `pip`
 #### Installation of Dependencies
